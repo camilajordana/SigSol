@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="01e59bfe-7925-4c4a-8e5a-2c44b0f3a6e3">
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     solicitacao.`idsolicitacao` AS solicitacao_idsolicitacao,
+     solicitacao.`status` AS solicitacao_status,
+     solicitacao.`tipo` AS solicitacao_tipo
+FROM
+     `solicitacao` solicitacao]]>
+	</queryString>
+	<field name="solicitacao_idsolicitacao" class="java.lang.Integer"/>
+	<field name="solicitacao_status" class="java.lang.String"/>
+	<field name="solicitacao_tipo" class="java.lang.String"/>
+	<group name="solicitacao_status">
+		<groupExpression><![CDATA[$F{solicitacao_status}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

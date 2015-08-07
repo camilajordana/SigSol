@@ -1,0 +1,39 @@
+#navMenu{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+#navMenu ul{
+    margin: 0px;
+    padding: 0px;
+    line-height: 30px;
+}
+
+#navMenu li{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    float: left;
+    position: relative;
+}
+
+#navMenu ul li a{
+    text-align: center;
+    font-family: Century Gothic;
+    text-decoration: none;
+    height: 30px;
+    width: 150px;
+    display: block;
+}
+
+
+#navMenu ul ul{
+    position: absolute;
+    visibility: hidden;
+    top: 30px;
+}
+
+#navMenu ul li:hover ul{
+    visibility: visible;
+}

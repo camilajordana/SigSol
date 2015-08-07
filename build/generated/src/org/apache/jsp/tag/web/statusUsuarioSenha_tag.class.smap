@@ -1,0 +1,16 @@
+SMAP
+statusUsuarioSenha_tag.java
+JSP
+*S JSP
+*F
++ 0 statusUsuarioSenha.tag
+WEB-INF/tags/statusUsuarioSenha.tag
+*L
+1,7:60
+7:88,7
+8,2:95
+9:118,8
+10:126,3
+11:129
+11,3:99
+*E
